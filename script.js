@@ -49,14 +49,52 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Basic validation
             if (!name || !email || !message) {
-                alert('Please fill in all fields.');
+                showNotification('Please fill in your name, email, and message to continue.', 'error');
                 return;
             }
             
             // For demo purposes, show a success message
-            alert('Thank you for your message! I will get back to you soon.');
+            showNotification('Thank you for your message! I will get back to you soon.', 'success');
             contactForm.reset();
         });
+    }
+
+    // Notification function for better UX
+    function showNotification(message, type) {
+        // Remove any existing notification
+        var existingNotification = document.querySelector('.notification');
+        if (existingNotification) {
+            existingNotification.remove();
+        }
+
+        // Create notification element
+        var notification = document.createElement('div');
+        notification.className = 'notification notification-' + type;
+        notification.textContent = message;
+        notification.style.cssText = 'position: fixed; top: 80px; left: 50%; transform: translateX(-50%); padding: 1rem 2rem; border-radius: 8px; font-weight: 500; z-index: 1001; animation: slideIn 0.3s ease;';
+        
+        if (type === 'success') {
+            notification.style.background = '#10b981';
+            notification.style.color = 'white';
+        } else {
+            notification.style.background = '#ef4444';
+            notification.style.color = 'white';
+        }
+
+        document.body.appendChild(notification);
+
+        // Remove notification after 4 seconds
+        setTimeout(function() {
+            if (notification.parentNode) {
+                notification.style.opacity = '0';
+                notification.style.transition = 'opacity 0.3s ease';
+                setTimeout(function() {
+                    if (notification.parentNode) {
+                        notification.remove();
+                    }
+                }, 300);
+            }
+        }, 4000);
     }
 
     // Add scroll effect to header

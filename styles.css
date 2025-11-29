@@ -275,6 +275,16 @@ section {
     color: var(--primary-dark);
 }
 
+.project-link.placeholder {
+    color: var(--text-light);
+    cursor: default;
+    opacity: 0.7;
+}
+
+.project-link.placeholder:hover {
+    color: var(--text-light);
+}
+
 /* Contact Section */
 .contact {
     background: var(--background);
