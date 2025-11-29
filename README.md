@@ -1,6 +1,3 @@
-# Juan's Portfolio
-
-A clean, responsive portfolio webpage showcasing projects, skills, and contact information.
 # Juan Camilo Garcia Cano - Portfolio
 
 A personal portfolio website showcasing my skills, projects, and contact information.
@@ -9,8 +6,24 @@ A personal portfolio website showcasing my skills, projects, and contact informa
 
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 - **Modern UI**: Clean and professional design with smooth animations
-- **Sections**: Hero, About Me, Projects, Skills, and Contact
-- **Easy Navigation**: Fixed header with smooth scroll navigation
+- **Sections**: Hero, About, Skills, Projects, and Contact
+- **Mobile Navigation**: Hamburger menu for smaller screens
+- **Contact Form**: Easy way for visitors to get in touch
+
+## Preview
+
+![Portfolio Preview](https://github.com/user-attachments/assets/34889c18-35fc-43e4-b019-e7f34afb01df)
+
+## Project Structure
+
+```
+/
+├── index.html      # Main HTML file
+├── projects.html   # Projects page
+├── styles.css      # CSS styles
+├── script.js       # JavaScript functionality
+└── README.md       # Project documentation
+```
 
 ## Getting Started
 
@@ -30,27 +43,6 @@ Then open `http://localhost:8080` in your browser.
 
 - Edit `index.html` to update content (name, bio, projects, skills, contact info)
 - Modify `styles.css` to change colors, fonts, and layout
-
-## Preview
-
-![Portfolio Preview](https://github.com/user-attachments/assets/34889c18-35fc-43e4-b019-e7f34afb01df)
-- **Sections**: Hero, About, Skills, Projects, and Contact
-- **Mobile Navigation**: Hamburger menu for smaller screens
-- **Contact Form**: Easy way for visitors to get in touch
-
-## Project Structure
-
-```
-/
-├── index.html      # Main HTML file
-├── styles.css      # CSS styles
-├── script.js       # JavaScript functionality
-└── README.md       # Project documentation
-```
-
-## Getting Started
-
-Simply open `index.html` in a web browser to view the portfolio.
 
 ## Technologies Used
 
