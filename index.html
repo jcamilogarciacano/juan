@@ -11,10 +11,14 @@
         <nav class="nav">
             <div class="logo">Juan Camilo</div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#languages">Languages</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="projects.html">Projects</a></li>
             </ul>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span></span>
@@ -24,117 +28,263 @@
         </nav>
     </header>
 
-    <main>
-        <section id="hero" class="hero">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Juan Camilo Garcia Cano</span></h1>
-                <p class="tagline">Software Developer | Problem Solver | Tech Enthusiast</p>
-                <a href="#contact" class="cta-button">Get In Touch</a>
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <p>I'm a passionate software developer with a keen interest in creating elegant solutions to complex problems. I love learning new technologies and building applications that make a difference.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or enjoying a good book.</p>
+    <main class="cv-main">
+        <section id="hero" class="cv-hero">
+            <div class="container cv-hero-grid">
+                <div class="cv-hero-left">
+                    <p class="eyebrow">Computer Scientist</p>
+                    <h1>Juan Camilo Garcia</h1>
+                    <p class="hero-lead">Independently motivated software developer interested in implementing ideas that will facilitate future developers to achieve greater things, and thus, advancing our technological and scientific progress as human civilization.</p>
+                    <div class="hero-actions">
+                        <a href="mailto:juancamigarcia@gmail.com" class="btn btn-primary">Email</a>
+                        <a href="tel:+491603444370" class="btn btn-secondary">Call</a>
+                    </div>
+                    <div class="contact-chips">
+                        <span class="chip">Weimar, Germany</span>
+                        <a class="chip" href="mailto:juancamigarcia@gmail.com">juancamigarcia@gmail.com</a>
+                        <a class="chip" href="https://milorico.itch.io/" target="_blank" rel="noopener noreferrer">https://milorico.itch.io/</a>
+                        <a class="chip" href="https://www.linkedin.com/in/camilo￾garcía6" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a class="chip" href="https://github.com/jcamilogarciacano" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <span class="chip">+491603444370</span>
+                    </div>
+                </div>
+                <div class="cv-hero-right">
+                    <div class="fact-card">
+                        <h3>Current Roles</h3>
+                        <p>Scientific Assistant &amp; VR Developer</p>
+                        <p>Scientific Assistant - HIWI</p>
+                        <p class="meta">Bauhaus-Universität Weimar</p>
+                    </div>
+                    <div class="fact-card">
+                        <h3>Languages</h3>
+                        <ul class="bullet-list tight">
+                            <li>German — (40/100)</li>
+                            <li>English — (80/100)</li>
+                            <li>Spanish — (100/100)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="skills">
+        <section id="summary" class="cv-section">
+            <div class="container narrow">
+                <h2 class="section-title">Professional Summary</h2>
+                <p class="summary-text">Independently motivated software developer interested in implementing ideas that will facilitate future developers to achieve greater things, and thus, advancing our technological and scientific progress as human civilization. I perceive VR as a tool that can help us explore another "dimension" of possibilities for human experiences and human-computer interactions, that's why I enjoy working on this field, and continuing my research, while surrounded by knowledgeable colleagues and peers.</p>
+            </div>
+        </section>
+
+        <section id="experience" class="cv-section cv-alt">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="timeline">
+                    <article class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Scientific Assistant &amp; VR Developer</h3>
+                                <p class="company">Bauhaus-Universität Weimar</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span>05/2024 - Present</span>
+                                <span class="location">Weimar, Thuringia, Germany</span>
+                            </div>
+                        </div>
+                        <ul class="bullet-list">
+                            <li>Developing Semantic Editing Tools for Immersive Recording (ReVRse) in Unity and C++</li>
+                        </ul>
+                    </article>
+                    <article class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Scientific Assistant - HIWI</h3>
+                                <p class="company">Bauhaus-Universität Weimar</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span>06/2024 - Present</span>
+                                <span class="location">Weimar, Thuringia, Germany</span>
+                            </div>
+                        </div>
+                        <ul class="bullet-list">
+                            <li>Wordpress &amp; AI developer - eTeach-Netzwerk Thüringen.</li>
+                        </ul>
+                    </article>
+                    <article class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Full Stack IONIC Web Developer</h3>
+                                <p class="company">Minero Int</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span>05/2021 - 01/2022</span>
+                                <span class="location">Bogotá, Capital District, Colombia</span>
+                            </div>
+                        </div>
+                        <ul class="bullet-list">
+                            <li>Creation of a friendly and responsive interface for a financial web portal.</li>
+                            <li>Implementation of connectivity between the database and the frontend in an encrypted and secure way.</li>
+                            <li>Add new features by expanding the functionalities of the system and implementing external API’s.</li>
+                        </ul>
+                    </article>
+                    <article class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Game Designer &amp; UI Designer</h3>
+                                <p class="company">Life Is The Game</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span>06/2020 - 12/2020</span>
+                                <span class="location">Bucaramanga, Santander, Colombia</span>
+                            </div>
+                        </div>
+                        <ul class="bullet-list">
+                            <li>Proposals for new mechanics and decisions about gameplay, based on information gathered in meetings to know the client's vision about the final product.</li>
+                            <li>Communicate with the development team about the customer's vision for the product and explain the game design to ensure everyone understand the same.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="cv-section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <article class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Master of Science - MS</h3>
+                                <p class="company">Bauhaus-Universität Weimar</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span>10/2022 - Present</span>
+                                <span class="location">Weimar, Germany</span>
+                            </div>
+                        </div>
+                        <p class="course-note">Courses</p>
+                    </article>
+                    <article class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Bachelor of Engineering - BE</h3>
+                                <p class="company">Universidad Autónoma de Bucaramanga</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span>01/2015 - 12/2020</span>
+                                <span class="location">Bucaramanga, Colombia</span>
+                            </div>
+                        </div>
+                        <p class="course-note">Courses</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="cv-section cv-alt">
             <div class="container">
                 <h2 class="section-title">Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-card">
-                        <h3>Frontend Development</h3>
-                        <ul>
-                            <li>HTML5 &amp; CSS3</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>Responsive Design</li>
-                        </ul>
+                        <h3>Development</h3>
+                        <div class="chip-row">
+                            <span class="chip">Unity</span>
+                            <span class="chip">C++</span>
+                            <span class="chip">Python</span>
+                            <span class="chip">JavaScript/TypeScript</span>
+                            <span class="chip">HTML/CSS/JS</span>
+                            <span class="chip">VR &amp; AR</span>
+                            <span class="chip">Machine Learning</span>
+                        </div>
                     </div>
                     <div class="skill-card">
-                        <h3>Backend Development</h3>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>Python</li>
-                            <li>RESTful APIs</li>
-                            <li>Databases</li>
-                        </ul>
+                        <h3>Tools &amp; Platforms</h3>
+                        <div class="chip-row">
+                            <span class="chip">Miro</span>
+                            <span class="chip">Wordpress</span>
+                            <span class="chip">Open AI Platform</span>
+                            <span class="chip">Prototyping</span>
+                        </div>
                     </div>
                     <div class="skill-card">
-                        <h3>Tools &amp; Others</h3>
-                        <ul>
-                            <li>Git &amp; GitHub</li>
-                            <li>Docker</li>
-                            <li>CI/CD</li>
-                            <li>Agile Methodologies</li>
-                        </ul>
+                        <h3>Design</h3>
+                        <div class="chip-row">
+                            <span class="chip">Blender3D</span>
+                            <span class="chip">Photoshop</span>
+                            <span class="chip">UI Design</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects">
+        <section id="publications" class="cv-section">
             <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    <article class="project-card featured">
-                        <div class="project-header">
-                            <h3>Dream of Waking</h3>
-                            <span class="language-badge csharp">C#</span>
+                <h2 class="section-title">Publications</h2>
+                <div class="publication-grid">
+                    <article class="publication-card">
+                        <div class="pub-header">
+                            <h3>Editing Immersive Recordings: An Elicitation Study</h3>
+                            <span class="pub-date">10/2024</span>
                         </div>
-                        <p>Horror-Action Pixel Art Videogame made in Unity.</p>
-                        <div class="project-stats">
-                            <span class="stars">⭐ 1</span>
-                            <span class="forks">🍴 0</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/jcamilogarciacano/Dream-of-Waking" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
-                        </div>
+                        <ul class="bullet-list">
+                            <li>Immersive recordings capture virtual reality interactions and are used  in various contexts such as education and entertainment.</li>
+                            <li>We interviewed expert editors of video  recordings to understand their  workflows, familiarized them with  immersive recordings, and asked them  about what editing challenges and  capabilities they can envision for  immersive recordings.</li>
+                        </ul>
+                        <a href="https://doi.org/10.1145/3641825.3689499" class="project-link" target="_blank" rel="noopener noreferrer">https://doi.org/10.1145/3641825.3689499</a>
                     </article>
-                    <article class="project-card featured">
-                        <div class="project-header">
-                            <h3>Mountain Peak</h3>
-                            <span class="language-badge csharp">C#</span>
+                    <article class="publication-card">
+                        <div class="pub-header">
+                            <h3>Development of an intelligent vehicle simulation for autonomous navigation through an urban environment.</h3>
+                            <span class="pub-date">11/2019</span>
                         </div>
-                        <p>Bauhaus Gamesfabrik summer semester 2024 - A collaborative game development project.</p>
-                        <div class="project-stats">
-                            <span class="stars">⭐ 1</span>
-                            <span class="forks">🍴 1</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/jcamilogarciacano/BUW-Gamesfabrik-2024-Mountain-Peak" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
-                        </div>
+                        <ul class="bullet-list">
+                            <li>The development of smart vehicles has been accelerating rapidly in  recent years, allowing for the refinement of their capabilities in  autonomous driving systems. This document presents a proposal that  enables the design and testing of control systems for the partial  automation of a vehicle, using software that simulates urban conditions.</li>
+                        </ul>
+                        <a href="http://hdl.handle.net/20.500.12749/12046" class="project-link" target="_blank" rel="noopener noreferrer">http://hdl.handle.net/20.500.12749/12046</a>
                     </article>
-                    <article class="project-card featured">
-                        <div class="project-header">
-                            <h3>ZCO</h3>
-                            <span class="language-badge csharp">C#</span>
-                        </div>
-                        <p>2D echolocation game - An innovative gameplay mechanic using sound-based navigation.</p>
-                        <div class="project-stats">
-                            <span class="stars">⭐ 1</span>
-                            <span class="forks">🍴 0</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/jcamilogarciacano/ZCO" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="projects-footer">
-                    <a href="projects.html" class="cta-button">View All Projects</a>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="contact-intro">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+        <section id="languages" class="cv-section cv-alt">
+            <div class="container split-columns">
+                <div class="info-card">
+                    <h3>Languages</h3>
+                    <ul class="bullet-list">
+                        <li>German — (40/100)</li>
+                        <li>English — (80/100)</li>
+                        <li>Spanish — (100/100)</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Interests</h3>
+                    <div class="chip-row">
+                        <span class="chip">Piano</span>
+                        <span class="chip">Drawing</span>
+                        <span class="chip">Tech News</span>
+                        <span class="chip">Languages</span>
+                        <span class="chip">Yoga</span>
+                        <span class="chip">Bike Riding</span>
+                        <span class="chip">Travel</span>
+                        <span class="chip">Games</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="cv-section contact">
+            <div class="container contact-grid">
+                <div class="contact-details">
+                    <h2 class="section-title align-left">Contact</h2>
+                    <p class="contact-intro">Let's connect about research, VR/AR development, or collaboration opportunities.</p>
+                    <ul class="contact-list">
+                        <li>Email: <a href="mailto:juancamigarcia@gmail.com">juancamigarcia@gmail.com</a></li>
+                        <li>Phone: <a href="tel:+491603444370">+491603444370</a></li>
+                        <li>Location: Weimar, Germany</li>
+                        <li>Portfolio: <a href="https://milorico.itch.io/" target="_blank" rel="noopener noreferrer">https://milorico.itch.io/</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/camilo￾garcía6" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/camilo￾garcía6</a></li>
+                        <li>GitHub: <a href="https://github.com/jcamilogarciacano" target="_blank" rel="noopener noreferrer">https://github.com/jcamilogarciacano</a></li>
+                    </ul>
+                </div>
                 <form class="contact-form" id="contact-form">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -159,7 +309,7 @@
             <p>&copy; 2025 Juan Camilo Garcia Cano. All rights reserved.</p>
             <div class="social-links">
                 <a href="https://github.com/jcamilogarciacano" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/camilo￾garcía6" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
             </div>
         </div>
     </footer>

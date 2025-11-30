@@ -1,0 +1,141 @@
+Juan Camilo Garcia
+
+
+juancamigarcia@gmail.com
++491603444370
+Weimar, Germany
+https://milorico.itch.io/
+https://www.linkedin.com/in/camilo￾garcía6
+https://github.com/jcamilogarciacano
+
+
+
+------------------------
+Computer Scientist
+
+
+------------------------
+Independently motivated software developer interested in implementing ideas that will facilitate future developers to achieve greater things, and thus, advancing our technological and scientific progress as human civilization. I perceive VR as a tool that can help us explore another "dimension" of possibilities for human experiences and human-computer interactions, that's why I enjoy working on this field, and continuing my research, while surrounded by knowledgeable colleagues and peers.
+
+
+Education
+------------------------
+Master of Science - MS
+Bauhaus-Universität Weimar
+10/2022 - Present
+Weimar, Germany
+Courses
+
+
+Bachelor of Engineering - BE
+Universidad Autónoma de Bucaramanga
+01/2015 - 12/2020
+Bucaramanga, Colombia
+Courses
+
+
+
+
+
+Work Experience
+------------------------
+Scientific Assistant & VR Developer
+Bauhaus-Universität Weimar
+05/2024 - Present
+Weimar, Thuringia, Germany
+Achievements/Tasks
+- Developing Semantic Editing Tools for Immersive Recording (ReVRse) in Unity and C++ 
+
+
+
+Scientific Assistant - HIWI
+Bauhaus-Universität Weimar
+06/2024 - Present
+Weimar, Thuringia, Germany
+Achievements/Tasks
+- Wordpress & AI developer - eTeach-Netzwerk Thüringen. 
+
+
+
+Full Stack IONIC Web Developer
+Minero Int
+05/2021 - 01/2022
+Bogotá, Capital District, Colombia
+Achievements/Tasks
+- Creation of a friendly and responsive interface for a financial web portal. 
+- Implementation of connectivity between the database and the frontend in an encrypted and secure way. 
+- Add new features by expanding the functionalities of the system and implementing external API’s. 
+
+
+
+Game Designer & UI Designer
+Life Is The Game
+06/2020 - 12/2020
+Bucaramanga, Santander, Colombia
+Achievements/Tasks
+- Proposals for new mechanics and decisions about gameplay, based on information gathered in meetings to know the client's vision about the final product. 
+- Communicate with the development team about the customer's vision for the product and explain the game design to ensure everyone understand the same. 
+
+
+
+
+
+
+Skills
+------------------------
+-Unity
+-C++
+-Python
+-VR & AR
+-Miro
+-Wordpress
+-HTML/CSS/JS
+-Open AI Platform
+-Prototyping
+-JavaScript/TypeScript
+-Blender3D
+-Photoshop
+-UI Design
+-Machine Learning
+
+
+
+Publications
+------------------------
+Editing Immersive Recordings: An Elicitation Study
+10/2024
+- Immersive recordings capture virtual reality interactions and are used  in various contexts such as education and entertainment. 
+- We interviewed expert editors of video  recordings to understand their  workflows, familiarized them with  immersive recordings, and asked them  about what editing challenges and  capabilities they can envision for  immersive recordings. 
+- https://doi.org/10.1145/3641825.3689499 . 
+
+
+Development of an intelligent vehicle simulation for autonomous navigation through an urban environment.
+11/2019
+- The development of smart vehicles has been accelerating rapidly in  recent years, allowing for the refinement of their capabilities in  autonomous driving systems. This document presents a proposal that  enables the design and testing of control systems for the partial  automation of a vehicle, using software that simulates urban conditions. 
+- <span>http://hdl.handle.net/20.500.12749/12046 . (http://hdl.handle.net/20.500.12749/12046)</span> 
+
+
+
+
+
+Languages
+------------------------
+-German- (40/100)
+-English- (80/100)
+-Spanish- (100/100)
+
+
+
+Interests
+------------------------
+-Piano
+-Drawing
+-Tech News
+-Languages
+-Yoga
+-Bike Riding
+-Travel
+-Games
+
+
+
