@@ -238,6 +238,11 @@ section {
     background: var(--background-alt);
 }
 
+.projects-footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
