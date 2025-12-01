@@ -108,4 +108,184 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Mini runner game (simple dino-style jumper)
+    (function initRunnerGame() {
+        const canvas = document.getElementById('runner-canvas');
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        const statusEl = document.getElementById('game-status');
+        const scoreEl = document.getElementById('game-score');
+        const btn = document.getElementById('runner-btn');
+
+        const groundLevel = canvas.height - 34;
+        const player = { x: 40, y: groundLevel - 28, width: 28, height: 28, vy: 0, onGround: true };
+        let obstacles = [];
+        let score = 0;
+        let speed = 4.2;
+        let spawnCountdown = 70;
+        let gameRunning = false;
+        let gameOver = false;
+        let lastTime = 0;
+
+        function resetGame() {
+            obstacles = [];
+            score = 0;
+            speed = 4.2;
+            spawnCountdown = 60;
+            player.y = groundLevel - player.height;
+            player.vy = 0;
+            player.onGround = true;
+            gameRunning = true;
+            gameOver = false;
+            lastTime = 0;
+            setStatus('Running...');
+            updateScore();
+            requestAnimationFrame(loop);
+        }
+
+        function setStatus(text) {
+            if (statusEl) statusEl.textContent = text;
+        }
+
+        function updateScore() {
+            if (scoreEl) scoreEl.textContent = 'Score: ' + Math.floor(score);
+        }
+
+        function spawnObstacle() {
+            const width = 18 + Math.random() * 18;
+            const height = 24 + Math.random() * 18;
+            obstacles.push({
+                x: canvas.width + Math.random() * 60,
+                y: groundLevel - height,
+                width,
+                height
+            });
+        }
+
+        function jump() {
+            if (!gameRunning) {
+                resetGame();
+                return;
+            }
+            if (player.onGround) {
+                player.vy = -9.5;
+                player.onGround = false;
+            }
+        }
+
+        function drawPlayer() {
+            ctx.fillStyle = '#2563eb';
+            ctx.fillRect(player.x, player.y, player.width, player.height);
+        }
+
+        function drawGround() {
+            ctx.strokeStyle = '#cbd5e1';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(0, groundLevel + 14);
+            ctx.lineTo(canvas.width, groundLevel + 14);
+            ctx.stroke();
+        }
+
+        function drawObstacles() {
+            ctx.fillStyle = '#ef4444';
+            obstacles.forEach(ob => {
+                ctx.fillRect(ob.x, ob.y, ob.width, ob.height);
+            });
+        }
+
+        function checkCollision() {
+            return obstacles.some(ob => {
+                return (
+                    player.x < ob.x + ob.width &&
+                    player.x + player.width > ob.x &&
+                    player.y < ob.y + ob.height &&
+                    player.y + player.height > ob.y
+                );
+            });
+        }
+
+        function loop(timestamp) {
+            if (!gameRunning) return;
+            if (!lastTime) lastTime = timestamp;
+            const delta = Math.min((timestamp - lastTime) / 16.67, 3);
+            lastTime = timestamp;
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawGround();
+
+            // Physics
+            player.vy += 0.6 * delta;
+            player.y += player.vy * delta;
+            const floorY = groundLevel - player.height;
+            if (player.y >= floorY) {
+                player.y = floorY;
+                player.vy = 0;
+                player.onGround = true;
+            }
+
+            // Obstacles
+            spawnCountdown -= delta;
+            if (spawnCountdown <= 0) {
+                spawnObstacle();
+                spawnCountdown = 55 + Math.random() * 45;
+            }
+
+            obstacles.forEach(ob => {
+                ob.x -= speed * delta;
+            });
+            obstacles = obstacles.filter(ob => ob.x + ob.width > 0);
+
+            drawObstacles();
+            drawPlayer();
+
+            // Scoring and difficulty
+            score += 0.4 * delta;
+            speed += 0.0025 * delta;
+            updateScore();
+
+            if (checkCollision()) {
+                gameRunning = false;
+                gameOver = true;
+                setStatus('Game over — press space to retry');
+                return;
+            }
+
+            requestAnimationFrame(loop);
+        }
+
+        function handleKey(e) {
+            if (e.code === 'Space' || e.code === 'ArrowUp') {
+                e.preventDefault();
+                if (gameOver) {
+                    resetGame();
+                    return;
+                }
+                jump();
+            }
+        }
+
+        if (btn) {
+            btn.addEventListener('click', () => {
+                if (gameOver || !gameRunning) {
+                    resetGame();
+                } else {
+                    jump();
+                }
+            });
+        }
+
+        ['keydown'].forEach(evt => document.addEventListener(evt, handleKey));
+        canvas.addEventListener('pointerdown', function() {
+            if (gameOver || !gameRunning) {
+                resetGame();
+            } else {
+                jump();
+            }
+        });
+
+        setStatus('Space');
+    })();
 });
