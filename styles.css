@@ -231,8 +231,6 @@ body {
     color: var(--text-color);
 }
 
-<<<<<<< ours
-=======
 .thesis-secondary {
     margin: 1rem 0 1.5rem;
     padding: 0;
@@ -277,8 +275,6 @@ body {
     line-height: 1.6;
     padding: 0 1rem 1rem;
 }
-
->>>>>>> theirs
 .contact-chips {
     display: flex;
     flex-wrap: wrap;
@@ -694,6 +690,12 @@ section {
 .project-links {
     display: flex;
     gap: 1rem;
+}
+
+.project-links.dual {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .project-link {
