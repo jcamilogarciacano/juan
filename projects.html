@@ -7,18 +7,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="nav">
             <div class="logo">Juan Camilo</div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#summary">Summary</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="index.html#languages">Languages</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
                 <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
-    <main>
+    <main class="projects-main">
         <section class="projects-hero">
             <h1>My GitHub Projects</h1>
             <p>A collection of my work and contributions on GitHub</p>
@@ -161,5 +171,6 @@
     <footer>
         <p>&copy; 2024 Juan Camilo Garcia Cano. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

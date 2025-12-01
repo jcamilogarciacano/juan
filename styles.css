@@ -907,6 +907,10 @@ main.cv-main {
     padding: 0;
 }
 
+main.projects-main {
+    padding-top: 6rem;
+}
+
 /* Projects Page Footer */
 footer {
     text-align: center;
