@@ -39,7 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Contact Form Handler
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        const EMAIL_ENDPOINT = 'https://formspree.io/f/xblnygnv';
+
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
             const formData = new FormData(contactForm);
@@ -47,15 +49,28 @@ document.addEventListener('DOMContentLoaded', function() {
             const email = formData.get('email');
             const message = formData.get('message');
             
-            // Basic validation
             if (!name || !email || !message) {
                 showNotification('Please fill in your name, email, and message to continue.', 'error');
                 return;
             }
-            
-            // For demo purposes, show a success message
-            showNotification('Thank you for your message! I will get back to you soon.', 'success');
-            contactForm.reset();
+
+            // Send to Formspree (or replace with your email API)
+            try {
+                const res = await fetch(EMAIL_ENDPOINT, {
+                    method: 'POST',
+                    headers: { 'Accept': 'application/json' },
+                    body: formData
+                });
+
+                if (res.ok) {
+                    showNotification('Thanks! Your message was sent.', 'success');
+                    contactForm.reset();
+                } else {
+                    showNotification('Could not send right now. Please try again later.', 'error');
+                }
+            } catch (err) {
+                showNotification('Network error. Please try again.', 'error');
+            }
         });
     }
 
