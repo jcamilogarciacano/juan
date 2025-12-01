@@ -380,7 +380,11 @@ body {
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid var(--border-color);
-    margin: 0.75rem 0;
+    margin: 0;
+}
+
+.map-card {
+    padding: 1.25rem;
 }
 
 .map-card iframe {
